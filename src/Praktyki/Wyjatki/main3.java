@@ -1,7 +1,5 @@
 package Praktyki.Wyjatki;
 
-package Lekcja10;
-
 import java.util.*;
 
 public class main3 {
