@@ -1,3 +1,5 @@
+zad 6 
+
 #include <iostream>
 using namespace std;
 
@@ -28,42 +30,49 @@ int main() {
     return 0;
 }
 
-
+zad 2-4A
 
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     unsigned n;
-    cin >> n;
-   
-    for (unsigned i = 1; i <= n; i++) {
-        for (unsigned j = 1; j <= i; j++) {
-            cout << j;
+    cin>>n;
+    if ((n>0) && (n<10)){
+        for(unsigned i=1; i<=n ;i++){
+            for(unsigned j=1; j<=i;j++){
+            cout<<j;
+            }cout<<endl;
         }
-        cout << endl;
+            
+    }
+    else{
+        cout<<"Zła";
     }
 }
 
-
+zad 2-4B
 
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    unsigned int m, n;
-    cin >> m >> n;
-    for (unsigned i = 0; i < n; i++) {
-        for (unsigned j = 1; j <= m; j++) {
-            cout << j;
+int main() {
+    unsigned int n,m;
+    cin>>n>>m;
+    if((n>0)&&(m<10)){
+        for(unsigned i=1;i<=n;i++){
+            for(unsigned j=1;j<=m;j++){
+            cout<<j;
+            }cout<<endl;
         }
-        cout << endl;
     }
-}
+    else{
+        cout<<"Zla liczba";
+        }
+}   
 
 
+zad 5A
 #include <iostream>
 using namespace std;
 
@@ -77,7 +86,7 @@ int main() {
 
     return 0;
 }
-
+zad 5B
 #include <iostream>
 using namespace std;
 
