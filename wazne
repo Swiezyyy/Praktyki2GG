@@ -1,0 +1,98 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m, n;
+    cin >> m >> n;
+
+    int macierz[10][10];
+    int macierzT[10][10];
+
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < n; j++)
+            cin >> macierz[i][j];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            macierzT[i][j] = macierz[j][i];
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << macierzT[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    unsigned n;
+    cin >> n;
+   
+    for (unsigned i = 1; i <= n; i++) {
+        for (unsigned j = 1; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    unsigned int m, n;
+    cin >> m >> n;
+    for (unsigned i = 0; i < n; i++) {
+        for (unsigned j = 1; j <= m; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string napis;
+    cin >> napis;
+
+    for (int i = napis.size() - 1; i >= 0; i--) {
+        cout << (napis[i] == 'A' ? 'B' : napis[i]);
+    }
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string napis;
+    cin >> napis;
+
+    for (int i = napis.size() - 1; i >= 0; i--) {
+        if (napis[i] == 'C') {
+            cout << napis[i] << napis[i];
+        }
+        else {
+            cout << napis[i];
+        }
+    }
+
+    return 0;
+}
